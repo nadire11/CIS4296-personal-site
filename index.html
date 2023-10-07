@@ -25,24 +25,24 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+      <!-- <script>
+        fetch('https://randomuser.me/api/?inc=name,picture')
+          .then((response) => response.json())
+          .then(({ results }) => results[0])
+          .then(({ name, picture }) => {
+            document.querySelector('#name').innerText = name.first
+            document.querySelector(
+              '.navbar-brand'
+            ).innerText = `${name.first} ${name.last}`
+            document.title = `${name.first} ${name.last} Personal Site`
+            document.querySelector('#profilepic').src = picture.large
+          })
+      </script> -->
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
-    <!-- Set Page Title Here -->
+    <title>Nadir Elmrani</title>
     <title></title>
   </head>
 
@@ -82,6 +82,9 @@
                 >Contact</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#personalLife">Personal Life</a>
+          </li>
           </ul>
         </div>
       </div>
@@ -99,13 +102,14 @@
           class="rounded-circle"
           draggable="false"
           id="profilepic"
+          src = "images/nadirthatdude4520.PNG"
         />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          <span id="name" class="font-weight-bold">Nadir Elmrani</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -113,6 +117,36 @@
           Information Science & Technology Student at Temple University
         </h5>
       </div>
+      <div>
+        <h6 class="text-center">About Me</h6>
+        <div class="text-center">
+           Hi my name is Nadir Elmrani, I like to go on long beach walks and play soccer. My favorite thing to do in my free time is
+           listening and discovery new music or doing any sort of physical activity. This can include hiking, running, swimming just anything
+           to keep me on my feet. I worked as a Software Engineer Intern at a life settlements company called Coventry. There I learned different
+           ways of Data Modeling as well as hands on experience on visualbasic.NET. My favorite place to eat is Chiptole, you just can't go wrong with it.
+        </div>
+    </div>
+    <div class="w-50">
+      <div id="carouselpictures" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1900">
+                  <img src="images/Coventry_Logo.jpg" class="d-block w-100 " />
+              </div>
+              <div class="carousel-item" data-bs-interval="1900">
+                  <img src="images/chip.jpg" class="d-block w-100" />
+              </div>
+              <div class="carousel-item" data-bs-interval="1900">
+                  <img src="images/sui.jpg" class="=d-block w-100" />
+              </div>
+              <div class="carousel-item" data-bs-interval="1900">
+                  <img src="images/music.png" class="d-block w-100" />
+              </div>
+              <div>
+
+              </div>
+          </div>
+      </div>
+  </div>
       <div class="row my-4 language-wrapper row-gap-5 col-gap-1 gap-lg-2">
         <div class="col text-center">
           <img
@@ -189,6 +223,7 @@
           />
         </div>
       </div>
+      
 
       <div class="row mt-3 mt-lg-5 next">
         <a href="#projects" class="col"
@@ -212,44 +247,34 @@
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5>Jeopardy using Windows Web Forms</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+    
+Jeopardy comes to life as a thrilling quiz game powered by C# and the .NET framework.
+With these tech tools, we've crafted an immersive experience where players can connect to a vast database of questions and answers.
+In the game, you'll have the chance to pick categories and answer questions in real-time, just like on the TV show. 
+To make sure everything runs smoothly, our team conducts rigorous unit testing. This helps us catch any bugs and ensure the game is both enjoyable and accurate.
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5>UFC Website</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
+          A front end website of the UFC. This website using json, react and different functionalitys for it to work
+          I used HTML, CSS to style and use different containers to display my content.
+          Used different functionalitys such as slideshows and filtering through searches to optmize the project.
         </p>
       </div>
       <div class="row w-100">
-        <h5>Query Dating Site</h5>
+        <h5>Photo Sense</h5>
       </div>
       <div class="row w-100">
         <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
+          Smartphones are one of the necessary mobile devices nowadays. People use the camera on their smartphones to record movements of lives and share them with friends and followers. PhotoSense is a camera application that helps users to organize and quickly access a specific part of the video. While a user uses a camera to record, PhotoSense recognizes and classifies the objects in the video with a trained model, then saves the label and timestamps into an associated document. That information will be displayed in a gallery.  
+
           efficitur at.
         </p>
       </div>
@@ -321,7 +346,32 @@
           href="https://bulletin.temple.edu/search/?P=CIS%202109"
           target="_blank"
         >
-          <h5 class="m-0">Database Management Systems</h5>
+
+          <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center" id="personalLife">
+            <div class="row mx-auto">
+              <h4 class="h1 font-weight-bold mx-auto text-center">Personal Life</h4>
+            </div>
+          
+            <div class="list-group list-group-mine">
+              <p>
+                I have a deep passion for playing soccer, and the thrill of being on the field, chasing the ball, and scoring goals is an unparalleled joy. When I'm not on the pitch, I love to unwind by enjoying some quality time with my family. There's nothing quite like sharing laughter, stories, and delicious Moroccan cuisine with loved ones. In my downtime, I also cherish watching shows and movies, immersing myself in captivating stories and diverse cultures. Being from Morocco, I carry the rich tapestry of its traditions, flavors, and vibrant heritage with me wherever I go, infusing every aspect of my life with a touch of Moroccan warmth and hospitality.
+              </p>
+            </div>
+          
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Open Image
+            </button>
+        
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="images/cous.jpg" alt="Modal Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </a>
         <div class="row mt-5 next justify-content-center align-items-center">
           <a href="#contact" class="text-center"
@@ -348,7 +398,7 @@
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:nadir.elmrani@temple.edu" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -358,7 +408,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="https://www.linkedin.com/in/nadir-elmrani-b4553a221/" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -368,7 +418,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/nadire11" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
